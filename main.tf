@@ -3,7 +3,7 @@ provider "aws" {
 
 #Jenkins Server
 resource "aws_instance" "jenkinsserver" {
-#  ami                    = "ami-07fd6ce15690a8805"
+  #  ami                    = "ami-07fd6ce15690a8805"
   ami                    = "ami-0500fd8e09bc4d758"
   instance_type          = "t2.micro"
   key_name               = "Devops_Project"
@@ -24,7 +24,7 @@ EOF
 
 #Tomcat Server
 resource "aws_instance" "tomcatserver" {
-#  ami                    = "ami-09275615588206bf0"
+  #  ami                    = "ami-09275615588206bf0"
   ami                    = "ami-0c3f30550916203ae"
   instance_type          = "t2.micro"
   key_name               = "Devops_Project"
@@ -46,7 +46,7 @@ EOF
 
 #Docker Server
 resource "aws_instance" "dockerserver" {
-#  ami                    = "ami-0cb2436f0fa9abc4f"
+  #  ami                    = "ami-0cb2436f0fa9abc4f"
   ami                    = "ami-01c7038273b52fbd3"
   instance_type          = "t2.micro"
   key_name               = "Devops_Project"
@@ -69,7 +69,7 @@ EOF
 
 #Ansible Server
 resource "aws_instance" "ansibleserver" {
-#  ami                    = "ami-01fed288ad7718cee"
+  #  ami                    = "ami-01fed288ad7718cee"
   ami                    = "ami-004c83b2404094e94"
   instance_type          = "t2.micro"
   key_name               = "Devops_Project"
